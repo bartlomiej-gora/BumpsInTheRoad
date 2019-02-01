@@ -1,8 +1,11 @@
 package com.github.bartlomiej.gora.bumps;
 
 class BumpsTheRoad {
+    private BumpsTheRoad() {
+    }
 
-    public static String bumps(final String road) {
-        return null;
+    static String bumps(final String road) {
+        int lenght = road.replace("_", "").length();
+        return lenght > 15 ? "Car Dead" : "Woohoo!";
     }
 }
